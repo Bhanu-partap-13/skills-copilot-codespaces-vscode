@@ -1,7 +1,9 @@
+// Create web server
+
 const http = require('http');
 const express = require('express');
 
-//create a web server
+// create a web server
 const hostname = '127.0.0.1';
 const port = 3000;
 
@@ -14,6 +16,7 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });
+
 // Import the express module
 const app = express();
 
